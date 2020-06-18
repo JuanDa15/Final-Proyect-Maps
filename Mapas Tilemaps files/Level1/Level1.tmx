@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.5" orientation="orthogonal" renderorder="left-down" width="25" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="18" nextobjectid="85">
+<map version="1.2" tiledversion="1.3.5" orientation="orthogonal" renderorder="left-down" width="25" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="19" nextobjectid="95">
  <editorsettings>
-  <export target="../Assets/Levels/Level1/Level1a.json" format="json"/>
+  <export target="../../../ParcialFinal/Assets/Levels/Level1/Level1a.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="tileset lv1.tsx"/>
  <tileset firstgid="248" source="decoration level1.tsx"/>
@@ -12,6 +12,8 @@
  <tileset firstgid="728" source="Idle box.tsx"/>
  <tileset firstgid="729" source="Bomb Off.tsx"/>
  <tileset firstgid="730" source="window.tsx"/>
+ <tileset firstgid="731" source="pig.tsx"/>
+ <tileset firstgid="731" source="pigBomb.tsx"/>
  <layer id="1" name="Background" width="25" height="19">
   <data encoding="csv">
 41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,
@@ -25,7 +27,7 @@
 41,294,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,
 41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,
 41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,
-41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,
+41,41,41,41,41,41,0,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,
 41,41,41,41,41,41,41,41,41,41,142,155,155,141,41,41,41,41,41,41,41,41,41,41,41,
 41,41,41,41,41,41,41,41,41,41,41,41,41,156,41,41,41,41,41,41,41,41,41,41,41,
 41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,
@@ -231,7 +233,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,571,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,731,0,571,731,0,0,0,0,0,0,0,0,0,0,731,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -291,5 +293,20 @@
  </objectgroup>
  <objectgroup id="8" name="Puerta" visible="0">
   <object id="71" x="31.75" y="232" width="46.125" height="55.875"/>
+ </objectgroup>
+ <objectgroup id="18" name="Enemigos" visible="0">
+  <object id="85" name="CerdoC" x="224" y="366.909" width="18.1818" height="17.1818">
+   <properties>
+    <property name="Distancia" type="int" value="-130"/>
+   </properties>
+  </object>
+  <object id="86" name="CerdoB" x="320.182" y="331.091" width="21.9091" height="20.6364"/>
+  <object id="88" name="CerdoB" x="416" y="330.909" width="21.9091" height="20.8182"/>
+  <object id="90" name="CerdoC" x="512" y="366.938" width="18" height="17">
+   <properties>
+    <property name="Distancia" type="int" value="100"/>
+   </properties>
+  </object>
+  <object id="93" name="CerdoB" x="768" y="331" width="21.875" height="20.9375"/>
  </objectgroup>
 </map>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.5" orientation="orthogonal" renderorder="right-down" width="25" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="18" nextobjectid="86">
+<map version="1.2" tiledversion="1.3.5" orientation="orthogonal" renderorder="right-down" width="25" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="19" nextobjectid="96">
  <editorsettings>
-  <export target="../Assets/Levels/Level1/Level1g.json" format="json"/>
+  <export target="../../../ParcialFinal/Assets/Levels/Level1/Level1g.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="tileset lv1.tsx"/>
  <tileset firstgid="248" source="decoration level1.tsx"/>
@@ -10,6 +10,8 @@
  <tileset firstgid="292" source="candle.tsx"/>
  <tileset firstgid="293" source="#1 - Transparent Icons.tsx"/>
  <tileset firstgid="725" source="window.tsx"/>
+ <tileset firstgid="726" source="pigBomb.tsx"/>
+ <tileset firstgid="727" source="pig.tsx"/>
  <layer id="1" name="Background" width="25" height="19">
   <data encoding="csv">
 2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,2684354601,
@@ -82,7 +84,7 @@
  <layer id="4" name="Platforms" width="25" height="19">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,267,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -176,27 +178,26 @@
  </objectgroup>
  <objectgroup id="9" name="WallCollisions" visible="0">
   <object id="2" x="-0.363636" y="544.182" width="416.273" height="35.7576"/>
-  <object id="3" x="415.909" y="511.994" width="9.72727" height="41.1875"/>
-  <object id="4" x="414.958" y="512" width="107.042" height="48.1042"/>
+  <object id="4" x="416.049" y="511.909" width="106.406" height="47.7406"/>
   <object id="5" x="511.969" y="480" width="10.0313" height="32"/>
   <object id="7" x="512.667" y="480" width="127.333" height="51.0521"/>
   <object id="8" x="640" y="448" width="9.90625" height="31.9688"/>
-  <object id="9" x="639.24" y="448" width="32.7604" height="48.9375"/>
-  <object id="10" x="672.031" y="415.969" width="9.71875" height="40.9688"/>
+  <object id="9" x="639.967" y="448" width="32.0331" height="48.9375"/>
+  <object id="10" x="672.304" y="415.969" width="9.44602" height="40.9688"/>
   <object id="11" x="672.448" y="415.969" width="63.5208" height="62.5521"/>
   <object id="12" x="767.995" y="0.03125" width="9.13043" height="425.125"/>
-  <object id="13" x="703.875" y="96.0543" width="32.1739" height="127.946"/>
-  <object id="15" x="672.087" y="182.217" width="64" height="41.7826"/>
+  <object id="13" x="703.875" y="96.0543" width="31.9921" height="127.946"/>
+  <object id="15" x="672.087" y="182.217" width="62.1818" height="41.7826"/>
   <object id="17" x="512" y="182.043" width="169.174" height="10"/>
-  <object id="18" x="480.091" y="151" width="31.9091" height="72.9091"/>
-  <object id="20" x="342.031" y="150.219" width="137.969" height="9.8125"/>
-  <object id="22" x="309.875" y="151" width="42.125" height="105.125"/>
+  <object id="18" x="480.091" y="138" width="31.9091" height="85.9091"/>
+  <object id="20" x="342.031" y="139.219" width="137.969" height="20.8125"/>
+  <object id="22" x="309.875" y="140" width="42.125" height="116.125"/>
   <object id="24" x="277.75" y="230.875" width="42.25" height="57"/>
   <object id="26" x="160.125" y="266.25" width="127.875" height="53.75"/>
   <object id="28" x="127.875" y="237.125" width="42.125" height="50.75"/>
   <object id="30" x="96" y="207.75" width="40.75" height="48.125"/>
-  <object id="32" x="63.875" y="150" width="41.875" height="74"/>
-  <object id="35" x="0" y="150" width="73.875" height="10.25"/>
+  <object id="32" x="63.875" y="134" width="33.875" height="90"/>
+  <object id="35" x="0" y="131" width="73.875" height="29.25"/>
   <object id="36" x="352.333" y="351.667" width="159.333" height="32.3333"/>
   <object id="37" x="480" y="320" width="31.3333" height="31.6667"/>
   <object id="38" x="543.818" y="63.8182" width="96.3636" height="32.1818"/>
@@ -213,6 +214,7 @@
   <object id="47" x="543.818" y="287.636" width="32" height="13"/>
   <object id="48" x="608" y="352" width="31.8182" height="15.7273"/>
   <object id="49" x="703.818" y="255.636" width="32.5455" height="11.6364"/>
+  <object id="86" x="735.875" y="31.9375" width="32.1875" height="15.4375"/>
  </objectgroup>
  <objectgroup id="12" name="Instakill" visible="0">
   <object id="52" x="501.636" y="150.848" width="216.303" height="15.4848"/>
@@ -234,14 +236,14 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,492,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,569,0,0,0,0,0,0,0,0,492,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,492,0,0,492,0,0,0,0,0,492,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,726,0,0,0,0,0,0,0,0,0,0,0,0,726,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,727,0,0,0,0,0,0,0,726,0,0,0,0,0,
 0,0,0,0,0,0,0,492,0,0,492,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,492,0,0,0,
 0,0,0,0,0,492,0,0,0,0,0,0,0,0,0,0,0,0,0,0,517,0,0,0,0,
-0,0,0,517,0,0,0,0,0,0,0,0,0,0,0,0,0,0,492,0,0,0,0,0,0,
+0,0,0,517,0,0,0,0,0,0,0,0,0,0,0,0,727,0,492,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,492,0,0,0,0,0,0,0,0,0,0,
-0,492,0,0,0,0,0,0,0,0,492,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,492,727,0,0,0,0,0,727,0,492,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
@@ -276,5 +278,30 @@
  </objectgroup>
  <objectgroup id="17" name="Lever" visible="0">
   <object id="85" x="717" y="389.333" width="13.6667" height="18"/>
+ </objectgroup>
+ <objectgroup id="18" name="Enemys" visible="0">
+  <object id="88" name="CerdoB" x="64" y="298.938" width="21.875" height="21"/>
+  <object id="89" name="CerdoB" x="479.938" y="299.063" width="21.875" height="21"/>
+  <object id="90" name="CerdoB" x="607.932" y="330.935" width="21.875" height="21"/>
+  <object id="91" name="CerdoC" x="64" y="526.957" width="17.913" height="17.0435">
+   <properties>
+    <property name="Distancia" type="int" value="160"/>
+   </properties>
+  </object>
+  <object id="92" name="CerdoC" x="255.981" y="526.916" width="17.913" height="17.0435">
+   <properties>
+    <property name="Distancia" type="int" value="159"/>
+   </properties>
+  </object>
+  <object id="93" name="CerdoC" x="351.918" y="334.916" width="17.913" height="17.0435">
+   <properties>
+    <property name="Distancia" type="int" value="108"/>
+   </properties>
+  </object>
+  <object id="94" name="CerdoC" x="512.134" y="462.842" width="17.913" height="17.0435">
+   <properties>
+    <property name="Distancia" type="int" value="107"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

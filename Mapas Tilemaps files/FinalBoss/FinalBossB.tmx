@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.5" orientation="orthogonal" renderorder="right-down" width="25" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="38">
+<map version="1.2" tiledversion="1.3.5" orientation="orthogonal" renderorder="right-down" width="25" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="18" nextobjectid="63">
  <editorsettings>
-  <export target="../../Assets/Levels/Final Boss/FinalBossB.json" format="json"/>
+  <export target="../../../ParcialFinal/Assets/Levels/Final Boss/FinalBossB.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="Terrain (32x32).tsx"/>
  <tileset firstgid="248" source="Tileset.tsx"/>
@@ -13,6 +13,9 @@
  <tileset firstgid="553" source="Ventana.tsx"/>
  <tileset firstgid="554" source="Decorations (32x32).tsx"/>
  <tileset firstgid="596" source="#1 - Transparent Icons.tsx"/>
+ <tileset firstgid="1028" source="Idlepuer.tsx"/>
+ <tileset firstgid="1029" source="Sprite-0002.tsx"/>
+ <tileset firstgid="1030" source="Sprite-0003.tsx"/>
  <layer id="1" name="Capa de patrones 1" width="25" height="19">
   <data encoding="csv">
 41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,
@@ -133,16 +136,16 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,748,0,0,0,0,820,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,820,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,820,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,820,0,748,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,820,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,1030,0,0,0,0,1030,0,0,0,0,0,
+0,0,0,0,0,0,0,1030,820,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,820,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,820,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1029,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1030,0,0,
+0,0,0,0,1030,0,0,0,0,1030,0,820,0,0,0,0,0,1030,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -174,7 +177,7 @@
   <object id="20" x="223.683" y="287.801" width="158.837" height="31.3302"/>
   <object id="21" x="448.095" y="255.742" width="95.4479" height="32.0588"/>
   <object id="22" x="606.932" y="255.014" width="95.4479" height="32.0588"/>
-  <object id="23" x="223.683" y="422.594" width="63.3891" height="26.23"/>
+  <object id="39" x="0" y="428.333" width="3" height="145.667"/>
  </objectgroup>
  <objectgroup id="10" name="Lava" visible="0">
   <object id="24" x="416.036" y="421.865" width="127.507" height="26.9586"/>
@@ -185,18 +188,70 @@
   <object id="27" x="258.657" y="259.385" width="24.0441" height="24.7727"/>
   <object id="28" x="449.553" y="225.869" width="25.5014" height="25.5014"/>
   <object id="29" x="355.562" y="387.621" width="23.3155" height="22.5869"/>
-  <object id="30" x="740.268" y="322.774" width="23.3155" height="24.7727"/>
  </objectgroup>
  <objectgroup id="12" name="Potions" visible="0">
   <object id="31" x="259.385" y="99.091" width="22.5869" height="24.7727"/>
   <object id="32" x="513.67" y="225.869" width="24.0441" height="25.5014"/>
  </objectgroup>
  <objectgroup id="13" name="Canons" visible="0">
-  <object id="33" x="335.161" y="265.214" width="27.6872" height="18.2153"/>
-  <object id="36" x="654.292" y="231.698" width="26.9586" height="21.8583"/>
+  <object id="33" name="False" x="335.161" y="265.214" width="27.6872" height="18.2153"/>
+  <object id="36" name="False" x="654.292" y="231.698" width="26.9586" height="21.8583"/>
  </objectgroup>
  <objectgroup id="14" name="ladders" visible="0">
   <object id="37" x="31.3302" y="383.249" width="31.3302" height="157.38"/>
  </objectgroup>
- <objectgroup id="9" name="water" visible="0"/>
+ <objectgroup id="9" name="water" visible="0">
+  <object id="40" x="224.805" y="420.885" width="63.3891" height="26.23"/>
+ </objectgroup>
+ <objectgroup id="15" name="Door" visible="0">
+  <object id="38" x="223.333" y="72" width="46.3333" height="55.6667"/>
+ </objectgroup>
+ <objectgroup id="16" name="Enemys" visible="0">
+  <object id="41" x="672" y="235.818" width="18" height="20.0909"/>
+  <object id="43" name="CerdoC" x="703.818" y="366.909" width="18" height="16.9091">
+   <properties>
+    <property name="Distancia" type="int" value="12"/>
+   </properties>
+  </object>
+  <object id="46" name="CerdoC" x="544.182" y="399" width="18" height="16.9091">
+   <properties>
+    <property name="Distancia" type="int" value="139"/>
+   </properties>
+  </object>
+  <object id="48" name="CerdoC" x="288.273" y="399.091" width="18" height="16.9091">
+   <properties>
+    <property name="Distancia" type="int" value="107"/>
+   </properties>
+  </object>
+  <object id="49" name="CerdoC" x="127.75" y="398.795" width="18" height="16.9091">
+   <properties>
+    <property name="Distancia" type="int" value="75"/>
+   </properties>
+  </object>
+  <object id="50" name="CerdoC" x="224.5" y="270.795" width="18" height="16.9091">
+   <properties>
+    <property name="Distancia" type="int" value="137"/>
+   </properties>
+  </object>
+  <object id="51" name="CerdoC" x="447.879" y="238.939" width="18" height="16.9091">
+   <properties>
+    <property name="Distancia" type="int" value="74"/>
+   </properties>
+  </object>
+  <object id="52" name="CerdoC" x="608.25" y="239.045" width="18" height="16.9091">
+   <properties>
+    <property name="Distancia" type="int" value="74"/>
+   </properties>
+  </object>
+  <object id="53" name="CerdoB" x="96.25" y="172" width="22" height="20"/>
+  <object id="55" name="CerdoB" x="192.273" y="300" width="22" height="20"/>
+  <object id="56" name="CerdoB" x="225.333" y="107.333" width="22" height="20"/>
+  <object id="59" name="CerdoB" x="479" y="105.333" width="22" height="20"/>
+  <object id="60" name="CerdoB" x="515" y="235" width="22" height="20"/>
+  <object id="61" name="CerdoB" x="354.5" y="108.5" width="22" height="20"/>
+  <object id="62" name="CerdoB" x="678.333" y="235.333" width="22" height="20"/>
+ </objectgroup>
+ <objectgroup id="17" name="Boos" visible="0">
+  <object id="42" x="748.092" y="326.489" width="18.3155" height="20.1477"/>
+ </objectgroup>
 </map>

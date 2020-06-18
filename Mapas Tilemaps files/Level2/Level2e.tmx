@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.5" orientation="orthogonal" renderorder="right-down" width="25" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="16" nextobjectid="80">
+<map version="1.2" tiledversion="1.3.5" orientation="orthogonal" renderorder="right-down" width="25" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="17" nextobjectid="91">
  <editorsettings>
-  <export target="../../Assets/Levels/Level2/Level2e.json" format="json"/>
+  <export target="../../../ParcialFinal/Assets/Levels/Level2/Level2e.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="Background.tsx"/>
  <tileset firstgid="2" source="Ventana.tsx"/>
@@ -32,6 +32,8 @@
  <tileset firstgid="941" source="ridges2.tsx"/>
  <tileset firstgid="942" source="Stones1.tsx"/>
  <tileset firstgid="943" source="trees3.tsx"/>
+ <tileset firstgid="944" source="bRUJAescoba.tsx"/>
+ <tileset firstgid="945" source="Bruja.tsx"/>
  <layer id="1" name="background" width="25" height="19">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -124,29 +126,6 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="8" name="Coins,Diamonds,Apples,Potions" width="25" height="19" visible="0">
-  <data encoding="csv">
-0,0,0,0,0,0,677,754,677,0,0,0,0,0,0,0,0,0,0,0,0,0,677,0,0,
-0,0,0,0,0,0,0,0,0,0,0,677,677,677,0,0,0,0,0,0,0,0,0,0,0,
-0,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,702,0,0,0,0,0,677,0,0,
-0,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,702,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,677,0,0,
-0,677,0,0,0,0,0,0,0,0,0,0,0,0,677,677,677,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,677,677,677,0,0,0,0,0,0,0,0,0,0,0,677,0,0,
-0,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,677,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,677,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,677,677,677,677,677,677,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,677,677,754,630,754,677,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,677,677,677,677,677,677,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
- </layer>
  <layer id="2" name="walls" width="25" height="19">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,12,68,68,12,12,
@@ -216,9 +195,32 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <layer id="8" name="Coins,Diamonds,Apples,Potions" width="25" height="19" visible="0">
+  <data encoding="csv">
+0,0,0,0,944,0,677,754,677,0,0,0,0,0,0,0,0,0,0,0,0,0,677,0,0,
+0,0,0,0,0,0,0,0,0,0,0,677,677,677,0,944,0,0,0,0,0,0,0,0,0,
+0,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,702,0,0,0,0,0,677,0,0,
+0,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,702,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,677,0,0,
+0,677,0,0,0,0,0,0,0,0,0,0,0,0,677,677,677,944,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,944,677,677,677,0,0,0,0,0,0,0,0,0,0,0,677,0,0,
+0,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,945,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,677,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,945,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,677,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,677,677,677,677,677,677,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,677,677,754,630,754,677,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,945,677,677,677,677,677,677,677,0,945,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
  <objectgroup id="5" name="WallCollision" visible="0">
-  <object id="1" x="0" y="95" width="64" height="34"/>
-  <object id="2" x="-2" y="129" width="34" height="28"/>
+  <object id="1" x="0" y="96.0078" width="32" height="33.1094"/>
+  <object id="2" x="-2" y="129" width="33.875" height="30.5"/>
   <object id="3" x="193" y="160" width="30" height="31"/>
   <object id="4" x="193" y="32" width="94" height="32"/>
   <object id="5" x="352" y="64" width="95" height="31"/>
@@ -243,9 +245,10 @@
   <object id="25" x="-1" y="353" width="130" height="93"/>
   <object id="76" x="796.667" y="63.3333" width="7.33333" height="289.333"/>
   <object id="78" x="224" y="256" width="31.3333" height="32"/>
+  <object id="82" x="62.2275" y="599.682" width="257.545" height="11.6364"/>
  </objectgroup>
  <objectgroup id="6" name="Water" visible="0">
-  <object id="26" x="64" y="582.5" width="256" height="25.5"/>
+  <object id="26" x="64" y="582.5" width="256" height="15.3182"/>
   <object id="27" x="288.333" y="321" width="94.6667" height="30.3333"/>
  </objectgroup>
  <objectgroup id="7" name="ladders" visible="0">
@@ -304,5 +307,31 @@
  </objectgroup>
  <objectgroup id="12" name="Potions" visible="0">
   <object id="75" x="164.364" y="515.091" width="22.9091" height="26.7273"/>
+ </objectgroup>
+ <objectgroup id="16" name="Enemys" visible="0">
+  <object id="83" name="BrujaC" x="32" y="551.818" width="22.1818" height="24"/>
+  <object id="84" name="BrujaC" x="320.273" y="552" width="22.1818" height="24"/>
+  <object id="85" name="BrujaC" x="513.182" y="296.182" width="22.1818" height="24"/>
+  <object id="86" name="BrujaC" x="768.182" y="231.818" width="22.1818" height="24"/>
+  <object id="87" name="BrujaE" x="127.909" y="6.90909" width="26.2727" height="25.0909">
+   <properties>
+    <property name="Distancia" type="int" value="200"/>
+   </properties>
+  </object>
+  <object id="88" name="BrujaE" x="479.864" y="39" width="26.2727" height="25.0909">
+   <properties>
+    <property name="Distancia" type="int" value="-200"/>
+   </properties>
+  </object>
+  <object id="89" name="BrujaE" x="544.5" y="166.545" width="26.2727" height="25.0909">
+   <properties>
+    <property name="Distancia" type="int" value="200"/>
+   </properties>
+  </object>
+  <object id="90" name="BrujaE" x="224.197" y="199.152" width="26.2727" height="25.0909">
+   <properties>
+    <property name="Distancia" type="int" value="200"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
